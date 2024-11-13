@@ -38,9 +38,9 @@ const faren=function (grados) {
 console.log("hola")
   
 const fac = function calculaFactorial(number) {
-  for (let i = 0; i < number; i++) {
+  for (let i = 1; i < number; i++) {
     return number*=i;
     
   }
 }  
-console
+console.log(hola);
