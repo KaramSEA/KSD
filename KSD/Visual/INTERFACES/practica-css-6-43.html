@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .content{
+
+        }
+        .caja{
+            background-color: blue;
+            height: 150px;
+            width: 150px;
+            margin: 20px;
+            animation-name: movimiento;
+            animation-duration: 4s;
+            position: relative;
+            animation-iteration-count: infinite;
+            animation-direction: alternate-reverse; 
+            background-repeat: no-repeat;
+            animation-timing-function: cubic-bezier(0.09, 1.04, 1,-0.06);
+            transform: skew(-17deg);
+
+        }
+
+        
+        @keyframes movimiento {
+            0%{
+                left: 0;
+
+            }50%{
+                background-color: lime;   
+                height: 911px;
+                width: 400px;
+
+                            
+            }
+            80%{
+                background-color: tomato;
+                
+            }
+            to{
+                left: 80%;
+                background-color: violet;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="caja">oaiofho</div>
+
+</body>
+</html>
