@@ -28,5 +28,19 @@ const esImpar = function(numero) {
 const ini=(function(){
   return 4*8;
 })();
+
+function celsiusAFahrenheit(celius) {
+  return (celius*9/5)+32;
+}
+const faren=function (grados) {
+  return (grados * (9/5))+32;
+}
+console.log("hola")
   
-  
+const fac = function calculaFactorial(number) {
+  for (let i = 0; i < number; i++) {
+    return number*=i;
+    
+  }
+}  
+console
