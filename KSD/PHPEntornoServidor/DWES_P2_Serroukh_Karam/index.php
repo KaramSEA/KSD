@@ -7,9 +7,6 @@ require_once "./clases/Revista.php";
 session_start();
 //session_destroy();
 
-
-
-
 $isbnLibros = $tituloLibros = $numPagLibros = $autoriaLibros = $numEjemplares= "";
 $isbnLibrosErr = $tituloLibrosErr = $numPagLibrosErr = $autoriaLibrosErr = $numEjemplaresErr= "";
 
