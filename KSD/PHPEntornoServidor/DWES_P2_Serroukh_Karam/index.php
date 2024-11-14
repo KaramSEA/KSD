@@ -184,7 +184,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         <input type="reset" value="Resetear"><br>
     </form>
     <h1>Lista de Libros</h1>
-    <?php if (!empty($_SESSION['libros'])) { ?>
+    <?php if (!empty($_SESSION['libros1'])) { ?>
         <table border="1">
             <tr>
                 <th>ISBN</th>
