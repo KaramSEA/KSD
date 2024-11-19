@@ -51,7 +51,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         <h1>Inicio de sesion</h1>
         
         <label for="email">Email: *</label>
-        <input type="email" id="email" name="email">
+        <input type="email" id="email" name="email" value="<?php if(empty($emailErr)){echo $email;}?>">
         <label class="error"><?php if(!empty($emailErr)){echo $emailErr;} ?></label><br>
 
         <label for="pass1">Contraseña: *</label>

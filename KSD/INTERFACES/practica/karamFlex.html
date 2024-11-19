@@ -1,0 +1,64 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Media Query Layout</title>
+    <style>
+      
+      .container {
+        width: 100%;
+        height: 500px;
+        display: flex;
+        flex-wrap: wrap;
+      }
+      .caja0 {
+        background-color: blue;
+        width: 100%;
+        padding: 20px;
+      }
+
+      .caja1 {
+        background-color: red;
+        height: 400px;
+        width: 80%;
+        align-self: flex-start;
+      }
+      .caja2 {
+        align-self: flex-end;
+        background-color: tomato;        
+        width: 19%;
+        height: 400px;
+      }
+      .caja3 {
+        background-color: green;
+        width: 100%;
+        height: 50px;
+      }
+
+   
+      @media only screen and (max-width: 550px) {
+        .contenedor {
+          flex-flow: column;
+        }
+        .caja1 {
+          width: 100%;
+        }
+        .caja2 {
+          width: 100%;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <h3>Flex</h3>
+    <div class="container">
+      <div class="caja0"></div>
+      <div class="caja1"></div>
+      <div class="caja2"></div>
+      <div class="caja3"></div>
+    </div>
+
+  </body>
+</html>

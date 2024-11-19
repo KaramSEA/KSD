@@ -7,7 +7,7 @@
 </head>
 <body>
     <h1>Ejer1</h1>
-
+    <p>hola</p>
     <h4>1.1</h4>
     <?php
         $numeros=[
