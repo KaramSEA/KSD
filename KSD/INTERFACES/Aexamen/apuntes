@@ -1,0 +1,177 @@
+Guía Completa de CSS Grid y Flexbox
+CSS Grid
+CSS Grid Layout es un sistema de diseño bidimensional que permite crear diseños complejos de manera sencilla. A continuación, se describen las propiedades más importantes de CSS Grid:
+Propiedades del Contenedor Grid
+display: grid;
+
+
+Activa el contenedor como un grid.
+grid-template-columns:
+
+
+Define el número y tamaño de las columnas en el grid.
+Ejemplo: grid-template-columns: 100px 200px auto;
+grid-template-rows:
+
+
+Define el número y tamaño de las filas en el grid.
+Ejemplo: grid-template-rows: 100px 200px;
+grid-template-areas:
+
+
+Define áreas nombradas dentro del grid.
+Ejemplo:
+ css;
+
+
+grid-gap (o gap):
+
+
+Define el espacio entre filas y columnas.
+Ejemplo: grid-gap: 10px;
+grid-auto-rows:
+
+
+Define el tamaño de las filas que se crean automáticamente.
+Ejemplo: grid-auto-rows: 100px;
+grid-auto-columns:
+
+
+Define el tamaño de las columnas que se crean automáticamente.
+Ejemplo: grid-auto-columns: 50px;
+grid-auto-flow:
+
+
+Controla cómo se colocan los elementos en el grid.
+Valores: row, column, dense.
+Ejemplo: grid-auto-flow: dense;
+justify-items:
+
+
+Alinea los elementos dentro de cada celda horizontalmente.
+Ejemplo: justify-items: center;
+align-items:
+
+
+Alinea los elementos dentro de cada celda verticalmente.
+Ejemplo: align-items: start;
+justify-content:
+
+
+Alinea el grid en el contenedor horizontalmente.
+Ejemplo: justify-content: space-between;
+align-content:
+
+
+Alinea el grid en el contenedor verticalmente.
+Ejemplo: align-content: stretch;
+Propiedades de los Elementos Hijos del Grid
+grid-column-start / grid-column-end:
+
+
+Especifica el inicio y el fin de una columna para un elemento.
+Ejemplo: grid-column: 1 / 3;
+grid-row-start / grid-row-end:
+
+
+Especifica el inicio y el fin de una fila para un elemento.
+Ejemplo: grid-row: 2 / 4;
+grid-area:
+
+
+Especifica un área de grid para un elemento usando el nombre del área.
+Ejemplo: grid-area: header;
+grid-column:
+
+
+Propiedad abreviada para grid-column-start y grid-column-end.
+Ejemplo: grid-column: 1 / span 2;
+grid-row:
+
+
+Propiedad abreviada para grid-row-start y grid-row-end.
+Ejemplo: grid-row: 1 / span 2;
+min-width / min-height:
+
+
+Define el tamaño mínimo de un elemento en el grid.
+Ejemplo: min-width: 100px;
+max-width / max-height:
+
+
+Define el tamaño máximo de un elemento en el grid.
+Ejemplo: max-width: 300px;
+Flexbox
+Flexbox es un modelo de diseño unidimensional que se utiliza para alinear y distribuir espacio entre elementos en una interfaz. A continuación, se describen las propiedades más importantes de Flexbox:
+Propiedades del Contenedor Flex
+display: flex;
+
+
+Activa el contenedor como un flex container.
+flex-direction:
+
+
+Define la dirección en la que se colocan los elementos hijos.
+Valores: row, row-reverse, column, column-reverse.
+Ejemplo: flex-direction: column;
+flex-wrap:
+
+
+Controla si los elementos deben ajustarse o no dentro del contenedor.
+Valores: nowrap, wrap, wrap-reverse.
+Ejemplo: flex-wrap: wrap;
+flex-flow:
+
+
+Propiedad abreviada para flex-direction y flex-wrap.
+Ejemplo: flex-flow: row wrap;
+justify-content:
+
+
+Alinea los elementos a lo largo del eje principal (horizontalmente si flex-direction es row).
+Ejemplo: justify-content: center;
+Valores: flex-start, flex-end, center, space-between, space-around, space-evenly.
+align-items:
+
+
+Alinea los elementos a lo largo del eje transversal (verticalmente si flex-direction es row).
+Ejemplo: align-items: stretch;
+Valores: flex-start, flex-end, center, baseline, stretch.
+align-content:
+
+
+Alinea las líneas del flex container cuando hay espacio extra en el eje transversal.
+Ejemplo: align-content: space-between;
+Valores: flex-start, flex-end, center, space-between, space-around, stretch.
+Propiedades de los Elementos Hijos del Flex
+flex-grow:
+
+
+Define la capacidad de un elemento para crecer si hay espacio disponible.
+Ejemplo: flex-grow: 1; (el elemento crecerá para ocupar el espacio extra).
+flex-shrink:
+
+
+Define la capacidad de un elemento para reducirse si no hay suficiente espacio.
+Ejemplo: flex-shrink: 1; (el elemento se reducirá si es necesario).
+flex-basis:
+
+
+Define el tamaño inicial de un elemento antes de que se aplique el espacio disponible.
+Ejemplo: flex-basis: 100px; (el elemento comenzará con un ancho de 100px).
+flex:
+
+
+Propiedad abreviada para flex-grow, flex-shrink y flex-basis.
+Ejemplo: flex: 1 1 100px; (crecerá, se reducirá y tendrá un tamaño base de 100px).
+align-self:
+
+
+Permite a un elemento anular la alineación establecida por align-items.
+Ejemplo: align-self: center;
+Valores: auto, flex-start, flex-end, center, baseline, stretch.
+order:
+
+
+Define el orden en que los elementos se presentan en el flex container.
+Ejemplo: order: 2; (por defecto, todos los elementos tienen un orden de 0

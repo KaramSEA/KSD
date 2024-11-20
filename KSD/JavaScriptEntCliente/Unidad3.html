@@ -7,24 +7,20 @@
 </head>
 <body>
     <script>
-        const vector=[2,5,4,6,41,6];
-        let enc=false;
-
-        let pos=0;
-
-        while (enc==false) {
-            if (vector[pos]==7) {
-                enc==true;
-            }
-            else{
-                pos++;
-            }
+        const mapa=new Map([
+            ["moha",19],
+            ["karam",79],
+            ["sam",109],
+            ["pol",1],
+            ["dudu",9],
+        ]
+        );
+        for (const personasEdades of mapa) {
+            console.log(personasEdades[1])
         }
-        if (enc) {
-            
-        }else{
-            console.log("no se ha encontrado")
-        }
+
+        
+        
     </script>
 </body>
 </html>
