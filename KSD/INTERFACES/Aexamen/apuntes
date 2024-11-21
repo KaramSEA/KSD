@@ -190,3 +190,27 @@ Ejemplo: order: 2; por defecto, todos los elementos tienen un orden de 0
     <section>: Para secciones temáticas dentro de un documento.
     <aside>: Para contenido relacionado, como una barra lateral.
     <footer>: Para el pie de página.
+
+
+############################################################################################
+
+    Static: Este es el valor por defecto. Los elementos con position: static se posicionan de acuerdo con el flujo normal del documento. No se les puede aplicar top, right, bottom o left.
+    Uso: Se utiliza cuando no se necesita ninguna posición especial.
+
+    Relative: Los elementos con position: relative se posicionan en relación a su posición original en el flujo del documento. Se pueden usar las propiedades top, right, bottom y left para mover el elemento desde su posición original.
+    Uso: Útil para ajustar la posición de un elemento sin sacarlo del flujo del documento
+
+    
+    Absolute: Los elementos con position: absolute se posicionan en relación a su primer ancestro posicionado (es decir, un elemento con position diferente de static). Si no hay un ancestro posicionado, se posiciona en relación al elemento <html>.
+    Uso: Ideal para elementos que deben estar en una posición específica en la página, independientemente del flujo del documento.
+
+    
+    fixed: Los elementos con position: fixed se posicionan en relación a la ventana del navegador. Permanecen en la misma posición incluso cuando se desplaza la página.
+    Uso: Comúnmente utilizado para elementos como menús o barras de navegación que deben permanecer visibles.
+
+    
+    sticky: Los elementos con position: sticky son una combinación de relative y fixed. Se comportan como un elemento relativamente posicionado hasta que se alcanza un umbral especificado (por ejemplo, top: 0), momento en el cual se comportan como un elemento fijo.
+    Uso: Útil para encabezados que deben permanecer en la parte superior de la ventana al desplazarse.
+
+
+
