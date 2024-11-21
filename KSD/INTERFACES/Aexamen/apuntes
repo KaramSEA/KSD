@@ -102,7 +102,7 @@ Ejemplo: max-width: 300px;
 
 
 
-
+############################################################################################################################3
 
 Flexbox
 Flexbox es un modelo de diseño unidimensional que se utiliza para alinear y distribuir espacio entre elementos en una interfaz. A continuación, se describen las propiedades más importantes de Flexbox:
@@ -177,4 +177,16 @@ Valores: auto, flex-start, flex-end, center, baseline, stretch.
 
 order:
 Define el orden en que los elementos se presentan en el flex container.
-Ejemplo: order: 2; (por defecto, todos los elementos tienen un orden de 0
+Ejemplo: order: 2; por defecto, todos los elementos tienen un orden de 0
+
+
+#######################################################################################3
+
+
+    <header>: Para el encabezado de una página o sección.
+    <nav>: Para la navegación.
+    <main>: Para el contenido principal.
+    <article>: Para contenido independiente que podría ser distribuido.
+    <section>: Para secciones temáticas dentro de un documento.
+    <aside>: Para contenido relacionado, como una barra lateral.
+    <footer>: Para el pie de página.
