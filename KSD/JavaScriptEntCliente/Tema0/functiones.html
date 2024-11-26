@@ -7,37 +7,28 @@
 </head>
 <body>
     <script>
-        let parameetro="paco";
+        
+const map=new Map();
 
-        function saludar(nombre) {
-            console.log(`hola, ${nombre}`);
-        }
-        saludar(parameetro);
+map.set('Karam', 20);
+map.set('Mario', 24);
+map.set('Juan', 19);
 
-        function esPar(num) {
-            let res=false;
-            if (num%2==0) res=true;
-            return res;
-        }
-        const vector=["hola","ads","buenas"]
-        function ejer(array, string) {
-            if (array.includes(string)) {
-                return true;
-            }
-            else {
-                return false;
-            }
 
-        }
 
-        if(eje(vector,"hola")){
-            console.log("lo has encontrado");
 
-        }else{
-            console.log("no lo has encntrado");
 
-        }
 
+function exiteValor(mapa, valor) {
+for (const valores of mapa) {
+if (valores[1]==valor) {
+    return valores[0];
+}
+return false;
+}
+}
+$hola=exiteValor(map,20);
+console.log($hola);
         
     </script>
 </body>

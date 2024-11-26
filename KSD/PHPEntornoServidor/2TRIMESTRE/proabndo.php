@@ -17,6 +17,56 @@ if ($c->query($sql)) {
 }else {
     echo "no ha funcionado";
 }
+//insertar
+//$sql="INSERT INTO alumnos VALUES ('897','moha','moha2002','25')";
 
-$sql="INSERT INTO alumnos VALUES (123,'sete', 'sete@gmail.com',
- 'sete2002',35);";
+$c->query($sql);
+echo $c->affected_rows;
+
+$sql="UPDATE alumnos SET nombre = 'Juan' WHERE id ='897'";
+$c->query($sql);
+
+$sql="DELETE FROM alumnos WHERE id = 235";
+$c->query($sql);
+
+//select
+$sql="SELECT * FROM alumnos";
+$resultado=$c->query($sql);
+
+while (($fila = $resultado->fetch_assoc()) != null) {
+    echo  "<br><br><br>" .$fila['id'] . "<br>";
+    echo $fila['nombre'] . "<br>";
+    echo $fila['pass'] . "<br>";
+    echo $fila['edad'] . "<br><br><br><br>";
+    
+
+}
+$sql="INSERT INTO alumnos VALUES (?,?,?,?)";
+$prepared=$c->prepare($sql);
+$prepared->bind_param("sssi", $id, $nombre, $pass, $edad);
+
+
+$id="44";
+$pass="karamlolo";
+$edad=86;
+$nombre="pollo";
+
+//$prepared->execute();
+
+$id="9";
+$pass="rlo";
+$edad=89;
+$nombre="lez";
+
+//$prepared->execute();
+
+function buscarMayores($conexion){
+    //$sql="SELECT * FROM alumnos where edad >= 18";
+
+    $r=$conexion->query("SELECT * from alumnos where edad >= 18");
+    while ($f = $r->fetch_assoc()) {
+        var_dump($f);
+    }
+
+};
+buscarMayores($c);
