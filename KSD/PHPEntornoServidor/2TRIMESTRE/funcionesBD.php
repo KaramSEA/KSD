@@ -41,5 +41,13 @@ function insertarUsuario($email, $pass): bool
  * @return bool
  */
 function existeUsuario($email) {
-
+    $sql="SELECT * from users where email=?";
+    $c=conectar();
+    $prepared=$c->prepare($sql);
+    $prepared->bind_param("s",$email);
+    $prepared->execute();
+    if ($prepared->affected_rows>0) {
+        return true;
+    }
+    return false;
 }
